@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Angular 2 HTTP Client</title>
+
+    <!--<script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2-polyfills.js"></script>-->
+    <script src="https://npmcdn.com/systemjs@0.19.25/dist/system.src.js"></script>
+    <script src="https://npmcdn.com/rxjs@5.0.0-beta.6/bundles/Rx.js"></script>
+    <script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2.dev.js"></script>
+    <script src="https://npmcdn.com/typescript@1.7.5/lib/typescript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.7/router.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/http.dev.js"></script>
+
+    <script>
+        System.config({
+            packages: {
+                'app': {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+
+    <link rel="stylesheet" href="src/css/app.css" />
+</head>
+<body>
+    <app>Loading...</app>
+</body>
+</html>
